@@ -1,15 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Element from "../views/Element.vue";
+import Admin from "../views/Admin.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home
-  },
+  {path: "/", name: "Home", component: Home},
+  {path: "/element",component: Element},
+    {path: "/admin",component: Admin},
   {
     path: "/about",
     name: "About",
